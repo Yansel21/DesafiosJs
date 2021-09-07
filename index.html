@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taller_js</title>
+
+    <style>
+        table,
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="text-center">
+        <h1><a>DESAFÍOS</a></h1>
+    </nav>
+
+    <article>
+        <section>
+            <h2>Desafio 1</h2>
+            <fieldset>
+                <legend>Pago Horas</legend>
+                <table class="desafio1">
+                    <tr>
+                        <td>Valor Hora $:</td>
+                        <td><input type="number" id="valorH"></td>
+                    </tr>
+                    <tr>
+                        <td>Horas Trabajadas:</td>
+                        <td><input type="number" id="horas"></td>
+                    </tr>
+
+                </table>
+                <p id="resu"></p>
+
+                <div>
+
+                    <button id="botton1" onclick="pago ()">Total</button>
+                </div>
+
+
+                <script type="text/javascript" src="js/Desafio1.js"></script>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>Desafio 2</h2>
+            <fieldset>
+                <legend>Indice de masa corporal (IMC)</legend>
+                <table class="desafio2">
+                    <tr>
+                        <td>Peso en (Kg):</td>
+                        <td><input type="number" id="peso"></td>
+                    </tr>
+                    <tr>
+                        <td>Estatura (m):</td>
+                        <td><input type="number" id="estatura"></td>
+                    </tr>
+
+                </table>
+                <p id="resu2"></p>
+
+                <div>
+
+                    <button id="botton2" onclick="calculoImc ()">IMC</button>
+                </div>
+
+
+                <script type="text/javascript" src="js/Desafio2.js"></script>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>Desafio 3</h2>
+            <fieldset>
+                <legend>Barras de Dulce</legend>
+                <table class="desafio3">
+                    <tr>
+                        <td>Cantidad de Barras Vendidas:</td>
+                        <td><input type="number" id="Barras"></td>
+                    </tr>
+
+
+                </table>
+                <p id="PrecioB"></p>
+                <p id="Descuento"></p>
+                <p id="PrecioFinal"></p>
+
+
+                <div>
+
+                    <button id="botton3" onclick="precioBarras ()">Total</button>
+                </div>
+
+
+                <script type="text/javascript" src="js/Desafio3.js"></script>
+            </fieldset>
+        </section>
+
+        <section>
+            <div>
+                <h2>Desafio 4</h2>
+                <fieldset>
+                    <legend>Suma de numeros</legend>
+                    <table class="desafio4">
+                        <tr>
+                            <div>
+                            <td>Ingrese Numero:</td>
+                            <td><input type="number" id="Numer"></td>
+                        </div>
+                        </tr>
+
+                    </table>
+                    <p id="sumaTotal"></p>
+                    <p id="sumaNumeros"></p>
+
+
+                    <p>
+
+                        <button id="botton4" type="reset" onclick="captura();">Agregar</button>
+                        <button id="botton4.1" type="reset" onclick="sumaArreglo();">SUMA</button>
+
+
+                    </p>
+
+                    <script type="text/javascript" src="js/Desafio4.js"></script>
+                </fieldset>
+        </section>
+
+        <section>
+            <div>
+                <h2>Desafio 5</h2>
+                <fieldset>
+                    <legend>Palindromos</legend>
+                    <table class="desafio5">
+                        <tr>
+                            <div>
+                            <td>Ingrese palabra:</td>
+                            <td><input type="text" id="palabra"></td>
+                        </div>
+                        </tr>
+
+                    </table>
+                    <p id="Palindromo"></p>
+
+                    <p>
+
+                        <button id="botton5" type="reset" onclick="esPalindromo();">Es Palindromo?</button>
+
+
+                    </p>
+
+                    <script type="text/javascript" src="js/Desafio5.js"></script>
+                </fieldset>
+        </section>
+
+        <section>
+            <div>
+                <h2>Desafio 6</h2>
+                <fieldset>
+                    <legend>Lista numeros</legend>
+                    <table class="desafio6">
+                        <tr>
+                            <div>
+                            <td>Ingrese lista de numeros separados con coma",":</td>
+                            <td><input type="text" id="numeros"></td>
+                        </div>
+                        </tr>
+
+                    </table>
+                    <p id="media"></p>
+                    <p id="desviacionEstandar"></p>
+
+                    <p>
+
+                        <button id="botton6" type="reset" onclick="calculos();">Calcular
+                        </button>
+
+
+                    </p>
+
+                    <script type="text/javascript" src="js/Desafio6.js"></script>
+                </fieldset>
+        </section>
+        <section>
+            <div>
+                <h2>Desafio 7</h2>
+                <fieldset>
+                    <legend>Diccionario frutas</legend>
+                    <table class="desafio7">
+                        <tr>
+                            <div>
+                            <td>Ingrese fruta:</td>
+                            <td><input type="text" id="fruta"></td>
+                        </div>
+                        </tr>
+
+                        <tr>
+                            <div>
+                            <td>Ingrese precio $:</td>
+                            <td><input type="number" id="precioFruta"></td>
+                        </div>
+                        </tr>
+
+                    </table>
+
+                    <p id="frutaAgregada"></p>
+
+                    <p>
+                        <button id="botton7" type="reset" onclick="agregarFruta();">Agregar fruta</button>
+                    </p>
+
+                    
+
+                    <table class="desafio7.1">
+                        <tr>
+                            <div>
+                            <td>Buscar fruta:</td>
+                            <td><input type="text" id="BuscarF"></td>
+                        </div>
+                        </tr>
+
+                        <tr>
+                            <div>
+                            <td>Kilos:</td>
+                            <td><input type="number" id="KilosF"></td>
+                        </div>
+                        </tr>
+                    </table>
+
+
+                    
+                    <p id="lavelPrecioTotal"></p>
+
+                    <p>
+                        <button id="botton7.2" type="reset" onclick="Encontrar();">buscar</button>
+                    </p>
+
+                    <script type="text/javascript" src="js/Desafio7.js"></script>
+                </fieldset>
+        </section>
+
+        </div>
+    </article>
+
+</body>
+
+</html>
